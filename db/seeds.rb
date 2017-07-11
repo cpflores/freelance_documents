@@ -24,3 +24,10 @@
     image_url: "https://c1.staticflickr.com/3/2842/33161286816_5550668958_b.jpg"
   )
 end
+
+puts "10 documents have been created"
+
+FreelanceDocument.create!(title: "New Red Phone Job", description: "Selvage whatever coloring book, hoodie tote bag schlitz air plant semiotics gentrify crucifix live-edge intelligentsia YOLO listicle. Portland put a bird on it typewriter disrupt. XOXO cardigan VHS hella actually portland.", file_url: "https://docs.google.com/document/d/1bGYJw9w3B4s4cliRxqDdDXiu-QwsJCaaVtA4U7BO_iU/edit?usp=sharing", image_url: "https://c1.staticflickr.com/4/3939/33067431515_4b19aed1e9_b.jpg"
+)
+
+puts "1 different document has been created"
