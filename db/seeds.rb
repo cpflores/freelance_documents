@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+#create_table "freelance_documents", force: :cascade do |t|
+#  t.string   "title"
+#  t.string   "description"
+#  t.text     "file_url"
+#  t.text     "image_url"
+#  t.datetime "created_at",  null: false
+#  t.datetime "updated_at",  null: false
+#end
+
+10.times do |d|
+  FreelanceDocument.create!(
+    title: "Document #{d}",
+    description: "Everyday carry 8-bit prism, tumeric ramps thundercats chia photo booth. Enamel pin poke vape lo-fi. Cred tumblr wayfarers photo booth lo-fi before they sold out whatever iceland shoreditch occupy kale chips.",
+    file_url: "https://docs.google.com/document/d/1bGYJw9w3B4s4cliRxqDdDXiu-QwsJCaaVtA4U7BO_iU/edit?usp=sharing",
+    image_url: "https://c1.staticflickr.com/3/2842/33161286816_5550668958_b.jpg"
+  )
+end
